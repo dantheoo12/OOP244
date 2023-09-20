@@ -1,0 +1,22 @@
+SFT221 Workshop 8 Reflection
+Daniel Jung
+046435038
+djung1@myseneca.ca
+Section NFF
+
+In this workshop I learned how to use virtual functions and pure abstract classes as both interfaces and 
+"base classes" for various types of classes that will be built on top of them. In this workshop, the Shape
+class acted as the abstract interface that the LblShape inherited. Shape was used to implement the operator
+overloads << and >> to call its draw() and getSpecs() functions, but had no other implementation of its own.
+Instead, it relied on LblShape to act as a base class for both Line and Rectangle. Through this hierarchy
+of classes, I was able to understand how the classes interact with each other, and how the virtual functions
+of the Shape interface were used to outline the structure of its derived classes, and ultimately, the Line and 
+Rectangle classes. 
+
+The concepts of this workshop were not complicated to understand, but implementation of future interface
+classes and pure virtual functions may be more difficult to conceptualize in my head. However, I enjoyed the 
+idea of creating a true "base class" that cannot actually be created, and that all derived classes are built
+with the defined members of the base class, only adding new members like m_length, or m_height/m_width for 
+the Rectangle class, as they are needed. The most difficult part of this workshop was, as always, ensuring that
+the calls to istream worked properly, but with time, I'm sure that I will get more comfortable with all of the
+various methods to get user input. 

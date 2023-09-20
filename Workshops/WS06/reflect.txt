@@ -1,0 +1,32 @@
+SFT221 Workshop 6 Reflection
+Daniel Jung
+046435038
+djung1@myseneca.ca
+Section NFF
+
+In this workshop, I learned a lot about working with different ifstream objects. While
+I was used to working with cin and cout from previous workshops, I used to just think
+of these as a more convenient way to perform functions from C like printf and scanf. 
+Through this workshop, I now understand how much more efficient C++ is and how powerful
+the use of istream and ostream objects can be when it comes to writng code that fits 
+many different use cases. In C, printf and scanf could only output and input from the 
+standard output and input, and we had to use file methods like fprintf and fscanf to 
+print and get inputs from files, which would ultimately take multiple functions to perform
+the same task using different streams. Now, with istream and ostream objects, we can 
+treat the standard input and output as stream objects and use them the same way we would
+with regular files as well. 
+
+Inadvertently, I also learned how copy constructors are automatically called when variables
+are passed by value as function parameters. Up until now, we have been largely using 
+references to pass variables around so that we always make changes to the original objects,
+but the tester file in this workshop used a pass by value, which passes a copy of an object.
+In doing so, it calls the copy constructor to create a temporary object that is destroyed
+when it goes out of scope of the function calling it. However, since this workshop used
+a text file with each object, the copy constructor still created a new text file that
+persists even after the object goes out of scope. In this case, I learned that, with these
+temporary objects, the delete function cannot be called on their resource variables until
+they are initialized first. Whether this was intended learning or not, I'm not sure, but
+the only fix I could find was to initialize resource variables in the copy constructor
+before calling the setEmpty() method to delete them. In a copy assignment operator, this 
+would not be acceptable since we would produce a memory leak, but since this is a constructor,
+there will be no values in the object to begin with.

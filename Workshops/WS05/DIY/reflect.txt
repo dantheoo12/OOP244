@@ -1,0 +1,20 @@
+OOP244 Workshop 5 Reflection
+Daniel Jung
+046435038
+djung1@myseneca.ca
+Section NFF
+
+	In this workshop, I learned how to use operators as member functions as well as friend
+functions. Operator overloads are very useful to write fast and simple code that can be reused
+several times. However, we must be aware that while class operator overloads are useful, their
+function should be very obvious and simple, otherwise we should use a different function name. 
+Class operator members are very powerful and add clear and simple syntax to a class that can
+make code readable, but if the definitions are not logical and obvious, the functionality of
+the operator can be unclear to readers. Friend functions are also useful to create functions
+to act on a class without requiring to be a member. While friend functions may initially seem
+like member functions, I learned the power of using friend functions with operators to allow 
+for external operator overloads to use instances of the class, which allows for more extended
+use of operator overloads outside of using the class as a left side operand. 
+
+	Overall, I had little difficulty with the coding of the workshop, but I gained a better
+understanding of operator overloads and why friend functions are useful over member functions.

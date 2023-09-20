@@ -1,0 +1,18 @@
+OOP244 Week 3 Reflection
+Daniel Jung
+046435038
+djung1@myseneca.ca
+
+	In this workshop, I learned a lot about classes, members and their privacy types.
+In C, structs did not have member functions, only data members, and so being able to 
+create functions specific to a class was new to me. While it was a bit tricky at first
+to get used to calling member functions and relying on my previous code to work properly,
+it got much easier the more I did it, and it became second nature to use . notation to 
+call member functions. For the DIY section, it was also new to me when determining which
+functions were to be private vs public, but I quickly got that unless a function needs
+to be called externally, it is better to create it as private first. 
+
+	The most challenging part was honestly the formatting of cout's output, which is very
+different from the way that C formats output. Using different functions like width(), 
+setprecision() and fill() were helpful once I figured them out, but they took a bit of 
+practice with first. 

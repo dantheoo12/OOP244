@@ -1,0 +1,20 @@
+OOP244 Workshop 10 Reflection
+Daniel Jung
+046435038
+
+In this workshop, I learned how to work with template functions and their various requirements, as well as
+template classes and how to use them. Template functions proved very powerful since they allow for dynamic
+data typing of functions, reducing the amount of code that is required to write a function that does a similar
+task just with a different data type. The thing I noticed, however, is that each time I called a templated 
+function, the compiler would input the types automatically based on the data passed to it, meaning that the 
+actual amount of memory being used would have been the same if each function were implemented for each of the 
+data types. However, template functions make code more maintainable and easier to implement new classes since
+the template already exists, and we can pass new classes or objects without rewriting the required functions 
+for them. 
+
+The requirements from the workshop functions are as follows: 
+search(): In order for this function to work, T1 must have the equality operator '==' implemented in order
+	to compare it to the key.
+listAllElements(): The requirements for the type in this function is that it must have the '<<' operator implemented
+	in order to be able to print to cout. The '<<' operator is implemented in the abstract ReadWrite class,
+	which is the base class of all of our data classes in this lab. 

@@ -1,0 +1,24 @@
+OOP244 Week 2 Reflection
+Daniel Jung
+046435038
+djung1@myseneca.ca
+
+	The most convenient and effecient tool I used in this workshop was pass by reference.
+Rather than my previous work in IPC144 and last week's workshop, which involved constantly 
+checking if a parameter was a pointer and if it needed to be dereferenced or not, it was
+much easier to pass a reference and treat the variable as it was and still be able to write
+it to heap memory. While it took some getting used to not adding a * to each pointer variable,
+it eventually became much simpler to use variable names as assigned. 
+	
+	I had minor difficulty when it came to remembering to close files and delete dynamically
+allocated memory, as it was not something that we had to do a lot of originally. While I 
+remembered to delete[] the working memory, I forgot to reset the pointer variables to nullptr,
+which resulted in valgrind finding memory leaks.
+
+	Out parameters are parameters that are meant to be modified by the function they are supplied
+to. In the case of the read function overloads, the out parameters are used to store the strings
+and ints provided by the function itself. In parameters, however, are meant to be taken in by the 
+function, but not modified. In this program, the display functions take in parameters, as they
+only display the information from the parameter provided and do not modify it. A way to ensure 
+a function is using an in parameter is to set it as a constant variable, and by doing so,
+keeps the function from manipulating it. 

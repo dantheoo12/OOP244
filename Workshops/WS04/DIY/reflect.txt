@@ -1,0 +1,19 @@
+OOP244 Workshop 4 Reflection
+Daniel Jung
+046435038
+djung1@myseneca.ca
+Section NFF
+
+	In this workshop, I became much more comfortable with constructors, destructors and 
+member functions. Overloading constructors was a very useful part of this workshop and I 
+understand the different uses of overloading them. An important thing I learned was that,
+in the case the constructor takes less arguments than the class has data members, the 
+other data members should still be initialized to safe empty states. If not, other member
+functions may not behave as described since the data members may still contain previous
+garbage values.
+
+	The function I had the most trouble with was the Canister pour function. The main issue
+with that function was the logic moreso than the implementation. Once I understood the 
+logic, the implementation was easier. Outside of the pour function, I became much more 
+comfortable with the idea of passing by references, references as return values and multi
+argument constructors. 

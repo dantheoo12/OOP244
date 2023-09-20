@@ -1,0 +1,16 @@
+SFT221 Workshop 7 Reflection
+Daniel Jung
+046435038
+djung1@myseneca.ca
+Section NFF
+
+In this workshop, I learned about the basics of inheritance and the powerful utility it can provide to a program.
+Through inheritance, we can prevent a lot of code duplication as well as developing a basic understanding of a 
+derived class through its base class. With the inheritance used in the workshop, we were able to create a Truck
+class that inherited everything from a MotorVehicle class while adding extra data members and creating its own 
+function overloads and friend function operator overloads, which made the class ultimately much more readable. 
+
+I had slight difficulty with the private vs. protected data members. While the lab documentation stated to make the
+data members of the MotorVehicle class private, the MotorVehicle class was actually the base class of the Truck class,
+which needed its data members to function correctly. As such, I had to change the access level of the MotorVehicle
+data members to protected so that the Truck class could properly inherit the data it needed without duplicating the code.

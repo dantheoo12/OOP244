@@ -1,0 +1,21 @@
+OOP244 Week 1 Reflection
+Daniel Jung
+046435038
+djung1@myseneca.ca
+
+	In this workshop, I learned how to restructure existing procedural programs into modules,
+as well as navigating cstrings and the functionality required for them. In the first part of
+the workshop, I encountered some difficulty with which headers to include and which were 
+unnecessary. While it could have been possible to simply include all of the headers in each 
+file, that would use extra compiler resources, and so it was important to find which header
+files contained the needed struct definitions and data for other header files. 
+
+	In the second part of the workshop, the parts that gave me the most trouble were the 
+functions that used length specifiers. The issues that I came across were ensuring the functions
+stopped at the correct length, and with zero-indexing, whether to start at len or len - 1. 
+Also, for the functions that did not include lengths (strCpy, strStr, etc), using pointer arithmetic
+was necessary since there was no upward limit of when to iterate. Without a limit on the number
+of iterations (length), I had to use a while loop ending iterating over each character of the 
+string until it hit a '\0' character, whereas I could have used for loops for conditions including
+lengths. However, I chose to use while loops for those functions as well, the lengths added
+extra exit conditions for the while loops. 

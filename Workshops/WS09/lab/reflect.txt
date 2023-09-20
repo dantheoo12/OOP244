@@ -1,0 +1,20 @@
+OOP244 Workshop 9 Reflection
+Daniel Jung
+046435038
+
+In this lab, I learned how to implement copy constructors and copy assignment operators
+for derived classes. While it may seem complicated, we can simply call the operators for
+the classes they are derived from to simplify the process. Rather than writing the same
+code for the copy constructor and the copy assignment operator that deletes resource 
+members and reassigns them, I did everything through my copy assignment operator. This
+ensured that the class's members all performed the same task when being copied, greatly
+simplified the copy constructor, and reduced code duplication. I also attempted the method
+of calling the copy assignment operator for the base class from the class notes - using a 
+C-style cast to cast the derived class down to the base class, and then executing the 
+assignment operator. The issue with this, was that for only one instance of the copying, 
+it was deleting the variables that were just stored, since the C-style cast actually creates
+a static copy rather than calling the operator directly. Instead, I used the method of 
+directly calling the member operator of the base class (Text::operator=(src)) to ensure that
+the correct copy assignment operator was used through explicit calling. This prevented the
+program from creating the static copy and circumvented any errors that that process may have 
+produced. 
